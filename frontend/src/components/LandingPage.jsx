@@ -356,20 +356,16 @@ const LandingPage = () => {
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <div className="space-y-2 text-gray-400">
-                <div className="hover:text-white cursor-pointer">About Us</div>
-                <div className="hover:text-white cursor-pointer">Features</div>
-                <div className="hover:text-white cursor-pointer">Pricing</div>
-                <div className="hover:text-white cursor-pointer">Contact</div>
+                <div className="hover:text-accent-primary cursor-pointer transition-colors">TransformBuddy.AI</div>
               </div>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
               <div className="space-y-2 text-gray-400">
-                <div className="hover:text-white cursor-pointer">Help Center</div>
-                <div className="hover:text-white cursor-pointer">Privacy Policy</div>
-                <div className="hover:text-white cursor-pointer">Terms of Service</div>
-                <div className="hover:text-white cursor-pointer">FAQ</div>
+                <a href="mailto:support@transformbuddy.ai" className="hover:text-accent-primary cursor-pointer transition-colors block">
+                  support@transformbuddy.ai
+                </a>
               </div>
             </div>
           </div>
