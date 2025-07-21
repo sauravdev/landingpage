@@ -222,7 +222,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* AI Transformation Showcase */}
+      {/* Social Proof */}
       <section className="py-20 px-6 bg-gradient-to-r from-gray-950 to-gray-900">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-center mb-4">See AI Transformation in Action</h2>
