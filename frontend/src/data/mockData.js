@@ -4,11 +4,7 @@ export const webinarData = {
   hero: {
     headline: "Ready to Transform Your Body & Mind with AI?",
     subheadline: "Discover how TransformBuddy.AI personalizes your fitness, habits & mental wellness journey.",
-    ctaText: "🔴 Reserve My Free Spot",
-    hostInfo: {
-      name: "Saurav Agarwal",
-      title: "Founder, TransformBuddy.AI"
-    }
+    ctaText: "🔴 Reserve My Free Spot"
   },
   
   benefits: [
