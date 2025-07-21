@@ -222,7 +222,109 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Social Proof */}
+      {/* AI Transformation Showcase */}
+      <section className="py-20 px-6 bg-gradient-to-r from-gray-950 to-gray-900">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl font-bold text-center mb-4">See AI Transformation in Action</h2>
+          <p className="text-gray-400 text-center mb-16 text-lg">Real Indians achieving real results with AI-powered guidance</p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Animated Stats Cards */}
+            <Card className="bg-gray-900/80 border-gray-700 hover:border-accent-primary/50 transition-all duration-500 hover:scale-105">
+              <CardContent className="pt-6 text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-accent-primary to-green-400 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+                  <TrendingUp className="w-8 h-8 text-black" />
+                </div>
+                <div className="text-3xl font-bold text-accent-primary mb-2">95%</div>
+                <div className="text-gray-300">Users see results in 30 days</div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gray-900/80 border-gray-700 hover:border-accent-primary/50 transition-all duration-500 hover:scale-105 delay-100">
+              <CardContent className="pt-6 text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-3xl font-bold text-accent-primary mb-2">10K+</div>
+                <div className="text-gray-300">Active transformations</div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gray-900/80 border-gray-700 hover:border-accent-primary/50 transition-all duration-500 hover:scale-105 delay-200">
+              <CardContent className="pt-6 text-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+                  <Star className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-3xl font-bold text-accent-primary mb-2">4.9</div>
+                <div className="text-gray-300">Average user rating</div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* AI Transformation Process */}
+          <div className="mt-16 grid md:grid-cols-3 gap-8">
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-24 h-24 bg-accent-primary/20 rounded-full flex items-center justify-center mx-auto border-4 border-accent-primary/30 group-hover:border-accent-primary transition-all duration-300 group-hover:scale-110">
+                  <Camera className="w-10 h-10 text-accent-primary group-hover:animate-bounce" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-accent-primary rounded-full animate-ping"></div>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-accent-primary transition-colors">1. Snap & Analyze</h3>
+              <p className="text-gray-400">AI instantly analyzes your food photos and tracks calories with 95% accuracy</p>
+            </div>
+
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-24 h-24 bg-accent-primary/20 rounded-full flex items-center justify-center mx-auto border-4 border-accent-primary/30 group-hover:border-accent-primary transition-all duration-300 group-hover:scale-110">
+                  <Brain className="w-10 h-10 text-accent-primary group-hover:animate-bounce" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-purple-500 rounded-full animate-ping delay-300"></div>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-accent-primary transition-colors">2. AI Learns You</h3>
+              <p className="text-gray-400">Machine learning adapts to your preferences, schedule, and Indian lifestyle</p>
+            </div>
+
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-24 h-24 bg-accent-primary/20 rounded-full flex items-center justify-center mx-auto border-4 border-accent-primary/30 group-hover:border-accent-primary transition-all duration-300 group-hover:scale-110">
+                  <TrendingUp className="w-10 h-10 text-accent-primary group-hover:animate-bounce" />
+                </div>
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full animate-ping delay-500"></div>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-accent-primary transition-colors">3. Transform Daily</h3>
+              <p className="text-gray-400">Get personalized insights and recommendations that fit your busy Indian life</p>
+            </div>
+          </div>
+
+          {/* Video Placeholder Section */}
+          <div className="mt-16">
+            <Card className="bg-gray-900/50 border-gray-700 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 aspect-video flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-accent-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+                      <svg className="w-10 h-10 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-2">Watch: AI Transformation Stories</h3>
+                    <p className="text-gray-400 max-w-md mx-auto">
+                      See how Priya from Pune lost 15kg, Rahul from Mumbai built muscle, and Anita from Delhi improved her mental health - all with AI guidance
+                    </p>
+                    <Button className="mt-4 bg-accent-primary text-black hover:bg-accent-hover">
+                      ▶ Play Demo Video
+                    </Button>
+                  </div>
+                  <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded text-sm animate-pulse">
+                    🔴 LIVE
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-center mb-16">What Indians Are Saying</h2>
