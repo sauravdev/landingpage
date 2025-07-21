@@ -130,14 +130,12 @@ const LandingPage = () => {
           </div>
           
           <div className="flex items-center justify-center gap-3 text-gray-300">
-            <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face&auto=format" 
-              alt="Saurav Agarwal" 
-              className="w-12 h-12 rounded-full border-2 border-accent-primary/50"
-            />
+            <div className="w-12 h-12 bg-accent-primary/20 rounded-full flex items-center justify-center">
+              <Brain className="w-6 h-6 text-accent-primary" />
+            </div>
             <div className="text-left">
-              <div className="font-semibold">{webinarData.hero.hostInfo.name}</div>
-              <div className="text-sm text-gray-400">{webinarData.hero.hostInfo.title}</div>
+              <div className="font-semibold">AI-Powered Transformation</div>
+              <div className="text-sm text-gray-400">Personalized for every Indian</div>
             </div>
           </div>
         </div>
