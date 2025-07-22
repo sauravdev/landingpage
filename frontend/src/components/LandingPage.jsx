@@ -29,7 +29,7 @@ import { webinarData, formFields } from '../data/mockData';
 const LandingPage = () => {
   const [formData, setFormData] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 45, seconds: 30 });
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [webinarStats, setWebinarStats] = useState({
     totalRegistrations: 0,
     availableSeats: 100
