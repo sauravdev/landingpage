@@ -29,6 +29,10 @@ const LandingPage = () => {
   const [formData, setFormData] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 45, seconds: 30 });
+  const [webinarStats, setWebinarStats] = useState({
+    totalRegistrations: 0,
+    availableSeats: 100
+  });
   const { toast } = useToast();
 
   // Mock countdown timer
