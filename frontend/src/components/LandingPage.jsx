@@ -175,7 +175,7 @@ const LandingPage = () => {
             
             <div className="text-sm text-gray-400 flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              100% Free • Privacy Guaranteed
+              August 2nd • 100% Free • Privacy Guaranteed
             </div>
           </div>
           
