@@ -116,21 +116,3 @@ export const formFields = [
     "Other"
   ]}
 ];
-
-export const mockFormSubmission = (formData) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      console.log("Mock form submission:", formData);
-      localStorage.setItem('webinar_registration', JSON.stringify({
-        ...formData,
-        registrationId: `REG-${Date.now()}`,
-        timestamp: new Date().toISOString()
-      }));
-      resolve({
-        success: true,
-        message: "Registration successful! Check your email for confirmation.",
-        redirectUrl: "/thank-you"
-      });
-    }, 1500);
-  });
-};
