@@ -160,18 +160,18 @@ const LandingPage = () => {
         <meta itemProp="url" content="https://c4ba4857-511c-4539-b829-b3320d7edefa.preview.emergentagent.com/" />
       </div>
       {/* Header */}
-      <header className="border-b border-gray-800 bg-black/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-2xl font-bold text-accent-primary">TransformBuddy.AI</div>
+      <header role="banner" className="border-b border-gray-800 bg-black/50 backdrop-blur-sm sticky top-0 z-50">
+        <nav role="navigation" className="container mx-auto px-6 py-4 flex items-center justify-between">
+          <h1 className="text-2xl font-bold text-accent-primary">TransformBuddy.AI</h1>
           <div className="flex items-center gap-4">
-            <div className="hidden md:block text-sm text-gray-300">
+            <time className="hidden md:block text-sm text-gray-300" dateTime="2025-08-02T19:00:00+05:30">
               📅 August 2nd, 2025 • 7:00 PM IST
-            </div>
+            </time>
             <Button onClick={scrollToForm} className="bg-accent-primary text-black hover:bg-accent-hover">
               Register Now
             </Button>
           </div>
-        </div>
+        </nav>
       </header>
 
       {/* Hero Section */}
