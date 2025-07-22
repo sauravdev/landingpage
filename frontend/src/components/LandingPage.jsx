@@ -193,7 +193,7 @@ const LandingPage = () => {
             <div className="flex items-center gap-4">
               <Clock className="w-6 h-6 text-red-400" />
               <span className="text-lg font-semibold">
-                ⏳ Only {webinarData.urgencyData.totalSeats - webinarData.urgencyData.claimedSeats} seats left!
+                ⏳ Only {webinarStats.availableSeats} seats left!
               </span>
             </div>
             
