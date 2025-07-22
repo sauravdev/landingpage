@@ -314,31 +314,111 @@ const LandingPage = () => {
             </div>
           </div>
 
-          {/* Video Placeholder Section */}
+          {/* AI Revolution Hook Section */}
           <div className="mt-16">
-            <Card className="bg-gray-900/50 border-gray-700 overflow-hidden">
-              <CardContent className="p-0">
-                <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 aspect-video flex items-center justify-center">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 bg-accent-primary/20 text-accent-primary px-4 py-2 rounded-full border border-accent-primary/30 mb-6">
+                <span className="animate-pulse">🔥</span>
+                <span className="font-semibold">AI Revolution in Progress</span>
+              </div>
+              <h3 className="text-3xl font-bold mb-4">The Future of Fitness is Here</h3>
+              <p className="text-gray-300 max-w-2xl mx-auto text-lg">
+                While others struggle with generic diets and workouts, our AI learns YOUR body, YOUR preferences, and YOUR Indian lifestyle to create the perfect transformation plan.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Before AI vs After AI Comparison */}
+              <Card className="bg-gray-900/50 border-gray-700 relative overflow-hidden">
+                <CardContent className="p-6">
                   <div className="text-center">
-                    <div className="w-20 h-20 bg-accent-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
-                      <svg className="w-10 h-10 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
+                    <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <svg className="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold mb-2">Watch: AI Transformation Stories</h3>
-                    <p className="text-gray-400 max-w-md mx-auto">
-                      See how Priya from Pune lost 15kg, Rahul from Mumbai built muscle, and Anita from Delhi improved her mental health - all with AI guidance
-                    </p>
-                    <Button className="mt-4 bg-accent-primary text-black hover:bg-accent-hover">
-                      ▶ Play Demo Video
-                    </Button>
+                    <h4 className="text-xl font-bold text-red-400 mb-4">WITHOUT AI</h4>
+                    <div className="space-y-3 text-gray-300">
+                      <p className="flex items-center gap-2">
+                        <span className="text-red-400">❌</span>
+                        Generic diets that ignore Indian food
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <span className="text-red-400">❌</span>
+                        Guessing calorie counts manually
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <span className="text-red-400">❌</span>
+                        One-size-fits-all workout plans
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <span className="text-red-400">❌</span>
+                        No real-time adaptation
+                      </p>
+                    </div>
                   </div>
-                  <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded text-sm animate-pulse">
-                    🔴 LIVE
+                </CardContent>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-accent-primary/20 to-green-500/20 border-accent-primary/50 relative overflow-hidden">
+                <CardContent className="p-6">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-accent-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Brain className="w-8 h-8 text-accent-primary" />
+                    </div>
+                    <h4 className="text-xl font-bold text-accent-primary mb-4">WITH TransformBuddy AI</h4>
+                    <div className="space-y-3 text-gray-300">
+                      <p className="flex items-center gap-2">
+                        <span className="text-accent-primary">✅</span>
+                        Personalized plans for Indian lifestyle
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <span className="text-accent-primary">✅</span>
+                        AI-powered photo calorie tracking
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <span className="text-accent-primary">✅</span>
+                        Workouts adapted to your progress
+                      </p>
+                      <p className="flex items-center gap-2">
+                        <span className="text-accent-primary">✅</span>
+                        24/7 intelligent recommendations
+                      </p>
+                    </div>
                   </div>
+                </CardContent>
+                <div className="absolute top-4 right-4 bg-accent-primary text-black px-2 py-1 rounded text-xs font-bold animate-pulse">
+                  NEW!
                 </div>
-              </CardContent>
-            </Card>
+              </Card>
+            </div>
+
+            {/* Transformation Timeline */}
+            <div className="mt-12">
+              <h4 className="text-2xl font-bold text-center mb-8">Your AI-Powered Transformation Journey</h4>
+              <div className="grid md:grid-cols-4 gap-6">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent-primary rounded-full flex items-center justify-center mx-auto mb-3 text-black font-bold">1</div>
+                  <h5 className="font-semibold mb-2 text-accent-primary">Week 1-2</h5>
+                  <p className="text-gray-400 text-sm">AI learns your habits, preferences, and goals</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent-primary rounded-full flex items-center justify-center mx-auto mb-3 text-black font-bold">2</div>
+                  <h5 className="font-semibold mb-2 text-accent-primary">Week 3-4</h5>
+                  <p className="text-gray-400 text-sm">Personalized meal and workout plans kick in</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent-primary rounded-full flex items-center justify-center mx-auto mb-3 text-black font-bold">3</div>
+                  <h5 className="font-semibold mb-2 text-accent-primary">Month 2</h5>
+                  <p className="text-gray-400 text-sm">Visible results start showing up</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-accent-primary rounded-full flex items-center justify-center mx-auto mb-3 text-black font-bold">4</div>
+                  <h5 className="font-semibold mb-2 text-accent-primary">Month 3+</h5>
+                  <p className="text-gray-400 text-sm">Complete lifestyle transformation achieved</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
