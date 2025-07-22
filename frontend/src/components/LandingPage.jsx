@@ -220,15 +220,26 @@ const LandingPage = () => {
       {/* Webinar Benefits */}
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl font-bold text-center mb-16">What You'll Learn</h2>
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-accent-primary/20 text-accent-primary px-4 py-2 rounded-full border border-accent-primary/30 mb-6">
+              <span>🎯</span>
+              <span className="font-semibold">What You'll Master in This Webinar</span>
+            </div>
+            <h2 className="text-4xl font-bold mb-4">From Struggle to Success</h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              Stop wasting time with generic advice. Learn the AI-powered approach that's transforming Indian lives every day.
+            </p>
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             {webinarData.benefits.map((benefit, index) => (
-              <Card key={index} className="bg-gray-900/50 border-gray-700 hover:border-accent-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent-primary/10">
+              <Card key={index} className="bg-gray-900/50 border-gray-700 hover:border-accent-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-accent-primary/10 group">
                 <CardHeader className="text-center">
-                  <div className="w-16 h-16 bg-accent-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    {getIcon(benefit.icon)}
+                  <div className="w-16 h-16 bg-accent-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-primary/30 transition-colors">
+                    <div className="text-accent-primary group-hover:scale-110 transition-transform">
+                      {getIcon(benefit.icon)}
+                    </div>
                   </div>
-                  <CardTitle className="text-xl">{benefit.title}</CardTitle>
+                  <CardTitle className="text-xl group-hover:text-accent-primary transition-colors">{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-gray-300 text-center">
