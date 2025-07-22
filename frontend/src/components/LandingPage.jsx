@@ -242,18 +242,32 @@ const LandingPage = () => {
             
             <div className="flex items-center gap-4">
               <div className="bg-gray-800 rounded-lg px-4 py-2 flex gap-2">
+                {timeLeft.days > 0 && (
+                  <>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-accent-primary">{timeLeft.days}</div>
+                      <div className="text-xs">DAYS</div>
+                    </div>
+                    <div className="text-accent-primary">:</div>
+                  </>
+                )}
                 <div className="text-center">
                   <div className="text-2xl font-bold text-accent-primary">{timeLeft.hours}</div>
                   <div className="text-xs">HRS</div>
                 </div>
+                <div className="text-accent-primary">:</div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-accent-primary">{timeLeft.minutes}</div>
                   <div className="text-xs">MIN</div>
                 </div>
+                <div className="text-accent-primary">:</div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-accent-primary">{timeLeft.seconds}</div>
                   <div className="text-xs">SEC</div>
                 </div>
+              </div>
+              <div className="text-sm text-gray-400">
+                Until August 2nd Webinar
               </div>
             </div>
           </div>
