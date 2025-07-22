@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+Allow: /admin
+
+# Block admin dashboard from general crawlers, allow only for specific bots
+User-agent: Googlebot
+Allow: /
+Disallow: /admin
+
+User-agent: Bingbot  
+Allow: /
+Disallow: /admin
+
+# Sitemap location
+Sitemap: https://c4ba4857-511c-4539-b829-b3320d7edefa.preview.emergentagent.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Additional directives for better SEO
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.svg
+Allow: *.webp
