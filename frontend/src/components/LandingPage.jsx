@@ -23,7 +23,7 @@ import {
   Check,
   ArrowRight
 } from 'lucide-react';
-import { webinarData, formFields, mockFormSubmission } from '../data/mockData';
+import { webinarData, formFields } from '../data/mockData';
 
 const LandingPage = () => {
   const [formData, setFormData] = useState({});
