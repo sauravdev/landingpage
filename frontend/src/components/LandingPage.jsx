@@ -36,16 +36,27 @@ const LandingPage = () => {
   });
   const { toast } = useToast();
 
-  // Mock countdown timer
+  // Countdown timer to August 2nd, 2025, 7:00 PM IST
   useEffect(() => {
+    const targetDate = new Date('2025-08-02T19:00:00+05:30').getTime();
+    
     const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev.seconds > 0) return { ...prev, seconds: prev.seconds - 1 };
-        if (prev.minutes > 0) return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
-        if (prev.hours > 0) return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        return prev;
-      });
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+      
+      if (distance > 0) {
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        // Webinar has started or ended
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
     }, 1000);
+    
     return () => clearInterval(timer);
   }, []);
 
