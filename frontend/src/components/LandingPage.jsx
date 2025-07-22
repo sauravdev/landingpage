@@ -48,6 +48,30 @@ const LandingPage = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Fetch real-time webinar stats
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const backendUrl = process.env.REACT_APP_BACKEND_URL || import.meta.env.REACT_APP_BACKEND_URL;
+        const response = await fetch(`${backendUrl}/api/webinar-stats`);
+        if (response.ok) {
+          const stats = await response.json();
+          setWebinarStats({
+            totalRegistrations: stats.total_registrations || 0,
+            availableSeats: stats.available_seats || 100
+          });
+        }
+      } catch (error) {
+        console.error('Failed to fetch webinar stats:', error);
+      }
+    };
+    
+    fetchStats();
+    // Refresh stats every 30 seconds
+    const statsInterval = setInterval(fetchStats, 30000);
+    return () => clearInterval(statsInterval);
+  }, []);
+
   const scrollToForm = () => {
     document.getElementById('signup-form').scrollIntoView({ behavior: 'smooth' });
   };
