@@ -132,7 +132,33 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-white">
+    <>
+      <Helmet>
+        <title>🚀 Free AI Fitness Webinar - Transform Your Body with AI | August 2nd, 2025</title>
+        <meta name="description" content="Join India's premier FREE AI fitness webinar on August 2nd, 2025. Learn how AI personalizes workouts, tracks calories from photos, and creates custom plans for Indian lifestyles. Limited to 100 participants!" />
+        <meta name="keywords" content="AI fitness webinar, TransformBuddy AI, August 2025 webinar, free fitness seminar, AI nutrition India, personalized workouts, Indian diet AI, health technology webinar, fitness transformation AI" />
+        
+        {/* Additional dynamic meta tags */}
+        <meta property="og:title" content="🚀 Free AI Fitness Webinar - Transform Your Body with AI | August 2nd, 2025" />
+        <meta property="og:description" content={`Join ${100 - webinarStats.totalRegistrations} remaining spots for India's premier AI fitness webinar on August 2nd, 2025. Learn AI-powered fitness transformation!`} />
+        
+        <meta name="twitter:title" content="🚀 Free AI Fitness Webinar - Transform Your Body with AI | August 2nd, 2025" />
+        <meta name="twitter:description" content={`Only ${webinarStats.availableSeats} seats left! Join India's AI fitness revolution on August 2nd, 2025.`} />
+        
+        <link rel="canonical" href="https://c4ba4857-511c-4539-b829-b3320d7edefa.preview.emergentagent.com/" />
+      </Helmet>
+      
+    <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-white"
+         itemScope 
+         itemType="https://schema.org/Event">
+      {/* Structured Data as hidden elements for better SEO */}
+      <meta itemProp="name" content="TransformBuddy.AI: Free AI Fitness Webinar" />
+      <meta itemProp="description" content="Learn how AI personalizes fitness, nutrition, and wellness for Indian lifestyles with photo-based calorie tracking and custom workout plans." />
+      <meta itemProp="startDate" content="2025-08-02T19:00:00+05:30" />
+      <meta itemProp="endDate" content="2025-08-02T21:00:00+05:30" />
+      <div itemProp="location" itemScope itemType="https://schema.org/VirtualLocation">
+        <meta itemProp="url" content="https://c4ba4857-511c-4539-b829-b3320d7edefa.preview.emergentagent.com/" />
+      </div>
       {/* Header */}
       <header className="border-b border-gray-800 bg-black/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
