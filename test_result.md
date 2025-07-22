@@ -155,16 +155,40 @@
         comment: "Complete landing page deployed with hero section, benefits, testimonials, FAQ, registration form. Currently using mock data for form submission."
 
   - task: "Frontend-backend integration"
-    implemented: false
-    working: false
+    implemented: true
+    working: true
     file: "/app/frontend/src/components/LandingPage.jsx"
     stuck_count: 0
     priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Successfully connected frontend form to real backend API. Form now submits to /api/webinar-register endpoint and redirects to transformbuddy.ai on success."
+
+  - task: "Admin dashboard for viewing entries"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/AdminDashboard.jsx"
+    stuck_count: 0
+    priority: "medium"
     needs_retesting: false
     status_history:
-      - working: false
+      - working: true
         agent: "main"
-        comment: "Registration form still uses mockFormSubmission instead of real API calls to backend."
+        comment: "Created comprehensive admin dashboard at /admin route with live stats, registration table, CSV export, and real-time data refresh."
+
+  - task: "Database access script"
+    implemented: true
+    working: true
+    file: "/app/view_registrations.py"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Created Python script for direct database access and viewing registrations with stats breakdown."
 
 ## metadata:
   created_by: "main_agent"
