@@ -175,18 +175,18 @@ const LandingPage = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-6 text-center relative overflow-hidden">
+      <section role="main" className="py-20 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/5 to-purple-500/5"></div>
         <div className="container mx-auto relative z-10 max-w-4xl">
-          <Badge className="mb-6 bg-accent-primary/20 text-accent-primary border-accent-primary/30">
-            🔥 Free Webinar - August 2nd, 2025 at 7:00 PM IST
-          </Badge>
+          <div className="mb-6 bg-accent-primary/20 text-accent-primary border-accent-primary/30 inline-flex items-center px-4 py-2 rounded-full border">
+            🔥 Free Webinar - <time dateTime="2025-08-02T19:00:00+05:30">August 2nd, 2025 at 7:00 PM IST</time>
+          </div>
           
-          <h1 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
+          <h2 className="text-5xl md:text-6xl font-black mb-6 leading-tight" itemProp="name">
             {webinarData.hero.headline}
-          </h1>
+          </h2>
           
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed" itemProp="description">
             {webinarData.hero.subheadline}
           </p>
           
