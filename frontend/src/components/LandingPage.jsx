@@ -484,6 +484,115 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Why This Webinar is Different - Hook Section */}
+      <section className="py-20 px-6 bg-gradient-to-r from-purple-900/20 to-accent-primary/10 border-y border-accent-primary/20">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 bg-accent-primary/30 text-accent-primary px-6 py-3 rounded-full border border-accent-primary/50 mb-6">
+              <span className="animate-bounce">⚡</span>
+              <span className="font-bold text-lg">EXCLUSIVE LIVE WEBINAR</span>
+            </div>
+            <h2 className="text-4xl font-bold mb-4">Why Everyone is Raving About This Webinar</h2>
+            <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+              This isn't another generic fitness webinar. It's a revolutionary approach that's changing how Indians transform their health.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-accent-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Check className="w-5 h-5 text-black" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-accent-primary">AI-Powered, Not Generic</h3>
+                    <p className="text-gray-300">Learn how AI creates plans specific to YOUR body, YOUR food habits, and YOUR Indian lifestyle - not some Western template.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-accent-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Check className="w-5 h-5 text-black" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-accent-primary">Live Demo + Q&A</h3>
+                    <p className="text-gray-300">Watch real-time AI analysis of Indian meals, get your questions answered live, and see the technology in action.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-accent-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Check className="w-5 h-5 text-black" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2 text-accent-primary">Exclusive Early Access</h3>
+                    <p className="text-gray-300">Be among the first 100 Indians to experience TransformBuddy.AI with special founding member benefits.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-accent-primary/30 relative overflow-hidden">
+                <div className="absolute inset-0 bg-accent-primary/5"></div>
+                <div className="relative z-10">
+                  <div className="text-center mb-6">
+                    <div className="w-20 h-20 bg-accent-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse">
+                      <Brain className="w-10 h-10 text-accent-primary" />
+                    </div>
+                    <h4 className="text-2xl font-bold mb-2">See AI in Action</h4>
+                    <p className="text-gray-400">Watch how AI instantly analyzes this dal-rice photo</p>
+                  </div>
+                  
+                  <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Camera className="w-5 h-5 text-accent-primary" />
+                      <span className="text-sm text-accent-primary font-semibold">AI Analysis Result:</span>
+                    </div>
+                    <div className="text-sm text-gray-300 space-y-1">
+                      <div>• Calories: 450 kcal (±10% accuracy)</div>
+                      <div>• Protein: 18g • Carbs: 75g • Fat: 8g</div>
+                      <div>• Fiber: 12g • Iron: High</div>
+                      <div className="text-accent-primary mt-2">💡 Perfect post-workout meal!</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded text-xs animate-pulse">
+                  LIVE DEMO
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-gray-900/50 border border-accent-primary/30 rounded-xl p-6 max-w-4xl mx-auto">
+              <h4 className="text-2xl font-bold mb-4 text-accent-primary">⏰ Limited Time Offer</h4>
+              <p className="text-gray-300 text-lg mb-4">
+                First 100 attendees get lifetime access to premium AI features worth ₹9,999 - absolutely free!
+              </p>
+              <div className="flex justify-center items-center gap-4">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-accent-primary">{100 - webinarStats.totalRegistrations}</div>
+                  <div className="text-sm text-gray-400">Spots Remaining</div>
+                </div>
+                <div className="text-gray-400">•</div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-accent-primary">₹9,999</div>
+                  <div className="text-sm text-gray-400">Value FREE</div>
+                </div>
+                <div className="text-gray-400">•</div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-accent-primary">100%</div>
+                  <div className="text-sm text-gray-400">Satisfaction</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Registration Form */}
       <section id="signup-form" className="py-20 px-6 bg-gray-950/50">
         <div className="container mx-auto max-w-2xl">
