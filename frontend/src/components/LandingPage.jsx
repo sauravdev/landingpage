@@ -152,7 +152,7 @@ const LandingPage = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-accent-primary/5 to-purple-500/5"></div>
         <div className="container mx-auto relative z-10 max-w-4xl">
           <Badge className="mb-6 bg-accent-primary/20 text-accent-primary border-accent-primary/30">
-            🔥 Limited Time Free Webinar
+            🔥 Free Webinar - August 2nd, 2025 at 7:00 PM IST
           </Badge>
           
           <h1 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
