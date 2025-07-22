@@ -57,21 +57,38 @@ const LandingPage = () => {
     setIsSubmitting(true);
     
     try {
-      const result = await mockFormSubmission(formData);
-      toast({
-        title: "Registration Successful! 🎉",
-        description: "Welcome aboard! Check your email for the webinar link and calendar invite.",
-      });
+      // Get the backend URL from environment variable
+      const backendUrl = process.env.REACT_APP_BACKEND_URL || import.meta.env.REACT_APP_BACKEND_URL;
       
-      // Mock redirect to thank you page
-      setTimeout(() => {
-        alert("Redirecting to Thank You page... (This is a mock redirect)");
-      }, 2000);
+      const response = await fetch(`${backendUrl}/api/webinar-register`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      
+      if (response.ok) {
+        toast({
+          title: "Registration Successful! 🎉",
+          description: result.message || "Welcome aboard! Check your email for the webinar link and calendar invite.",
+        });
+        
+        // Redirect to transformbuddy.ai after success
+        setTimeout(() => {
+          window.location.href = 'https://transformbuddy.ai';
+        }, 2000);
+      } else {
+        throw new Error(result.detail || 'Registration failed');
+      }
       
     } catch (error) {
+      console.error('Registration error:', error);
       toast({
         title: "Registration Failed",
-        description: "Something went wrong. Please try again.",
+        description: error.message || "Something went wrong. Please try again.",
         variant: "destructive"
       });
     } finally {
